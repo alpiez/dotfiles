@@ -1,0 +1,10 @@
+[opener]
+pdf_opener = [
+    # thanks: https://www.reddit.com/r/linux4noobs/comments/1dbqdnl/comment/lvhjobz/
+    { run = 'zathura "$@"', desc = "zathura", block = true, for = "unix" }
+]
+
+[open]
+rules = [
+    { mime = "application/pdf", use = ["pdf_opener", "reveal"] }
+]
