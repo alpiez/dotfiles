@@ -5,6 +5,6 @@ pdf_opener = [
 ]
 
 [open]
-append_rules = [
+prepend_rules = [
     { mime = "application/pdf", use = ["pdf_opener", "reveal"] }
 ]
